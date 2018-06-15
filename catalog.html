@@ -5,206 +5,120 @@
     <link href="style.css" rel="stylesheet">
     <title>Магазин готовых шаблонов Нёрдс</title>
   </head>
- <body>
-     <header class='main-header'>
-         <nav class='main-navigation'>
-         <a class='main-header-logo'>
-             <img src='#' alt='Логотип "Нёрдс"'>
-         </a>
-         <ul class='site-navigation'>
-             <li><a href='#'>Студия</a></li>
-             <li><a href='#'>Клиенты</a></li>
-             <li><a href='nerds-catalog.psd'>Магазин</a></li>
-             <li><a href='#'>Контакты</a></li>             
-         </ul>
-         <ul class='shopping-cart'>
-             <li><a href='#'>Корзина<img src='#' alt=''></a></li>
-         </ul>
-         </nav>
-     </header>
-     <main class='container'>
-         <h1>Магазин готовых шаблонов</h1>
-         <section class='filters'>
-         <h2 сlass='visually-hidden'>Фильтр шаблонов</h2>
-         <!--<form></form>-->
-         <!--<form></form>-->    
-         </section>
-         <section class='catalog'>
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="Sedona-1">
-                            <img src="#" alt="Sedona-2">
-                            <img src="#" alt="Sedona-3">
+    <body>
+        <header class='main-header'>
+            <nav class='main-navigation'>
+                <a class='main-header-logo' href="catalog.html">
+                    <img src='#' alt='Логотип "Нёрдс"'>
+                </a>
+                <ul class='site-navigation'>
+                    <li><a href='#'>Студия</a></li>
+                    <li><a href='#'>Клиенты</a></li>
+                    <li class="site-navigation-current"><a href='catalog.html'>Магазин</a></li>
+                    <li><a href='#'>Контакты</a></li>             
+                </ul>
+                <div class='shopping-cart'>
+                    <a href='#'>Корзина<img src='#' alt=''></a>
+                </div>
+            </nav>
+        </header>
+        <main class='container'>
+            <h1>Магазин готовых шаблонов</h1>
+            <section class='filters'>
+                <h2 сlass='visually-hidden'>Фильтр шаблонов</h2>
+                <!--<form></form>-->
+            </section>
+            <div class='sorting>'>
+                <p><b>Сортировать:</b></p>
+                <ul class='sorting-by-type'>
+                    <li><a href='#'>По цене</a></li>
+                    <li><a href='#'>По типу</a></li>
+                    <li><a href='#'>По названию</a></li>
+                </ul>
+                <ul class='pyramid-sorting'>
+                    <li><a href='#'><img src='#' alt='По возрастанию'></a></li>
+                    <li><a href='#'><img src='#' alt='По убыванию'></a></li>
+                </ul>
+            </div>          
+            <section class='catalog'>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <img src="#" alt="Sedona">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>Sedona</a>
+                            <p>Информационный сайт для туристов</p>
+                            <a class='button'>9900 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>Sedona</h3>
-                        <p>Информационный сайт для туристов</p>
-                        <input type='button' value='9900 РУБ.'>
-                    </div>
-                </li>
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="Pink-1">
-                            <img src="#" alt="Pink-2">
-                            <img src="#" alt="Pink-3">
+                    </li>
+                    <li class="catalog-item">
+                        <img src="#" alt="Pink">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>Pink</a>
+                            <p>Приложение от депрессии</p>
+                            <a class='button'>11000 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>Pink</h3>
-                        <p>Приложение от депрессии</p>
-                        <input type='button' value='11100 РУБ.'>
-                    </div>
-                </li>
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="Barbershop-1">
-                            <img src="#" alt="Barbershop-2">
-                            <img src="#" alt="Barbershop-3">
+                    </li>
+                    <li class="catalog-item">
+                        <img src="#" alt="Barbershop">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>Barbershop Borodinski</a>
+                            <p>Сайт барбершопа</p>
+                            <a class='button'>7700 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>Barbershop Borodinski</h3>
-                        <p>Сайт барбершопа</p>
-                        <input type='button' value='7700 РУБ.'>
-                    </div>
-                </li>
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="Mishka-1">
-                            <img src="#" alt="Mishka-2">
-                            <img src="#" alt="Mishka-3">
+                    </li>
+                    <li class="catalog-item">
+                        <img src="#" alt="Mishka">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>Mishka</a>
+                            <p>Интернет-магазин handmade-товаров для дома</p>
+                            <a class='button'>10900 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>Mishka</h3>
-                        <p>Интернет-магазин handmade-товаров для дома</p>
-                        <input type='button' value='10900 РУБ.'>
-                    </div>
-                </li>
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="A+-1">
-                            <img src="#" alt="A+-2">
-                            <img src="#" alt="A+-3">
+                    </li>
+                    <li class="catalog-item">
+                        <img src="#" alt="A+-school">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>A+ school</a>
+                            <p>Сайт школы</p>
+                            <a class='button'>15000 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>A+ school</h3>
-                        <p>Сайт школы</p>
-                        <input type='button' value='15000 РУБ.'>
-                    </div>
-                </li>
-                <li class="catalog-item">
-                    <div class="slider">
-                        <input type="radio" id="button-1" name="toggle">
-                        <input type="radio" id="button-2" name="toggle">
-                        <input type="radio" id="button-3" name="toggle">
-                        <div class="slider-controls">
-                            <label for="button-1"></label>
-                            <label for="button-2"></label>
-                            <label for="button-3"></label>
-                    </div>
-                    <div class="slider-inner">
-                        <div class="slider-slides">
-                            <img src="#" alt="Kvast-1">
-                            <img src="#" alt="Kvast-2">
-                            <img src="#" alt="Kvast-3">
+                    </li>
+                    <li class="catalog-item">
+                        <img src="#" alt="Kvast">
+                        <div class='catalog-item-description'>
+                            <a class='catalog-item-modal-window'>Кваст</a>
+                            <p>Сайт по продаже крафтового кваса</p>
+                            <a class='button'>13333 РУБ.</a>
                         </div>
-                    </div>
-                    </div>
-                    <div class='catalog-item-description'>
-                        <h3>КВАСТ</h3>
-                        <p>Сайт по продаже крафтового кваса</p>
-                        <input type='button' value='13333 РУБ.'>
-                    </div>
-                </li>
-            </ul>
-            <ul class='pagination-list'>
-                <li class='pagination-item pagination-item-current'><a>1</a></li>
-                <li class='pagination-item'><a href='#'>2</a></li>
-                <li class='pagination-item'><a href='#'>3</a></li>
-                <li class='pagination-item'><a href='#'>СЛЕДУЮЩАЯ</a></li>
-            </ul>
-         </section>
-     </main>
-     <footer class='main-footer'>
-         <section class='contacts'>
-             <b>NЁRDS DESIGN STUDIO</b>
-             <p>191186, Санкт-Петербург,<br>
-                ул.Б.Конюшенная, д.19/8<br><br>
-                тел. +7 (812) 275-75-75</p>
-             <a class='button' href='#'>НАПИШИТЕ НАМ</a>
-<!--or <button> or <input type='button'>-->
-         </section>
-         <div id='map'></div>
-<!--         <script></script>-->
-         <noscript><img src='#' alt='Введите адрес в Google Maps'></noscript>
-         <div class="footer-social">
-            <b>Давайте дружить, это выгодно!</b>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-             </ul>
-        </div>
-     </footer>
- </body>
+                    </li>
+                </ul>
+                <ul class='pagination-list'>
+                    <li class='pagination-item pagination-item-current'><a>1</a></li>
+                    <li class='pagination-item'><a href='#'>2</a></li>
+                    <li class='pagination-item'><a href='#'>3</a></li>
+                    <li class='pagination-item'><a href='#'>Следующая</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer class='main-footer'>
+            <section class='contacts'>
+                <p><b>Nёrds design studio</b></p>
+                <p>191186, Санкт-Петербург,
+                    ул.Б.Конюшенная, д.19/8</p>
+                <a href='tel.:+78122757575'>тел. +7 (812) 275-75-75</a>
+                <a class='button' href='#'>Напишите нам</a>
+            </section>
+            <div id='map'></div>
+    <!--         <script></script>-->
+            <noscript><img src='#' alt='Введите адрес в Google Maps'></noscript>
+            <div class="footer-social">
+                <ul class='social-contacts'>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+                <p><b>Давайте дружить, это выгодно!</b></p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
+    </body>
 </html>
