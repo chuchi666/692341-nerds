@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet">
+    <meta charset='utf-8'>
+    <link href='style.css' rel='stylesheet'>
     <title>Магазин готовых шаблонов Нёрдс</title>
   </head>
     <body>
         <header class='main-header'>
-            <nav class='main-navigation'>
-                <a class='main-header-logo' href="index.html">
+            <nav class='main-navigation' aria-label='Навигация по сайту'>
+                <a class='main-header-logo' href='index.html'>
                     <img src='img/logo-nerds.svg' alt='Логотип "Нёрдс"'>
                 </a>
                 <ul class='site-navigation'>
                     <li><a href='#'>Студия</a></li>
                     <li><a href='#'>Клиенты</a></li>
-                    <li class="site-navigation-current"><a href='catalog.html'>Магазин</a></li>
-                    <li><a href='#'>Контакты</a></li>             
+                    <li class='site-navigation-current'><a href='catalog.html'>Магазин</a></li>
+                    <li><a href='#'>Контакты</a></li>
                 </ul>
                 <div class='shopping-cart'>
                     <a href='#'><img src='#' alt=''>Корзина</a>
@@ -26,7 +26,40 @@
             <h1>Магазин готовых шаблонов</h1>
             <section class='filters'>
                 <h2 сlass='visually-hidden'>Фильтр шаблонов</h2>
-                <!--<form></form>-->
+            <form action='#' aria-label='Критерии выбора работы'>
+                <fieldset>
+                  <legend>Стоимость</legend>
+                      <input type='text'><label class='service-properties-name' for='price' aria-label='Ценовой диапазон'></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка</legend>
+                    <input id='adaptive layout' type='radio' name='grid' value='adaptive layout' checked=''>
+                      <label class='service-properties-name' for='adaptive layout' aria-label='Адаптивная сетка'>Адаптивная</label>
+                    <input id='fixed layout' type='radio' name='grid' value='fixed layout'>
+                      <label class='service-properties-name' for='fixed layout' aria-label='Фиксированная сетка'>Фиксированная</label>
+                    <input id='rubber layout' type='radio' name='grid' value='rubber layout'>
+                      <label class='service-properties-name' for='rubber layout' aria-label='Резиновая сетка'>Резиновая</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности</legend>
+
+                    <input id='slider' type='checkbox' name='features' value='slider' checked=''>
+                    <label class='service-properties-name' for='slider' aria-label='С добавлением слайдера'>Слайдер</label>
+
+                    <input id='benefit-block' type='checkbox' name='features' value='benefit-block'>
+                    <label class='service-properties-name' for='benefit-block' aria-label='С добавлением блока преимуществ'>Блок преимуществ</label>
+
+                    <input id='news' type='checkbox' name='features' value='news' checked=''>
+                    <label class='service-properties-name' for='news' aria-label='С добавлением блока Новости'>Новости</label>
+
+                    <input id='gallery' type='checkbox' name='features' value='gallery'>
+                    <label class='service-properties-name' for='gallery' aria-label='С добавлением блока Галереи'>Галерея</label>
+
+                    <input id='cart' type='checkbox' name='features' value='cart'>
+                    <label class='service-properties-name' for='cart' aria-label='С добавлением Корзины'>Корзина</label>
+                </fieldset>
+                <button class="form-button" aria-label="Показать результаты по заданным критериям">Показать</button>
+            </form>
             </section>
             <section class='catalog'>
                 <p><b>Сортировать:</b></p>
@@ -39,58 +72,58 @@
                     <li><a href='#'><img src='#' alt='По убыванию'></a></li>
                     <li><a href='#'><img src='#' alt='По возрастанию'></a></li>
                 </ul>
-                <ul class="catalog-list">
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-sedona.jpg" alt="Sedona">
+                <ul class='catalog-list'>
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-sedona.jpg' alt='Sedona'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>Sedona</a>
                             <p>Информационный сайт для туристов</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-pink.jpg" alt="Pink">
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-pink.jpg' alt='Pink'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>Pink app</a>
                             <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-barbershop.jpg" alt="Barbershop">
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-barbershop.jpg' alt='Barbershop'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>Barbershop</a>
                             <p>Сайт салона красоты. Для мужчин, да.</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-mishka.jpg" alt="Mishka">
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-mishka.jpg' alt='Mishka'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>Mishka</a>
                             <p>Интернет-магазин вязаных игрушек</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-aplus.jpg" alt="A plus">
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-aplus.jpg' alt='A plus'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>A plus</a>
                             <p>Лендинг курсов повышения квалификации</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
-                    <li class="catalog-item">
-                        <img src="img/catalog-item-kvast.jpg" alt="Kvast">
+                    <li class='catalog-item'>
+                        <img src='img/catalog-item-kvast.jpg' alt='Kvast'>
                         <div class='catalog-item-description'>
                             <a class='catalog-item-modal-window'>Кваст</a>
                             <p>Промо-сайт производителя крафтового кваса</p>
-                            <a class='button'>9900 РУБ.</a>
+                            <button class='button' aria-label='Закажите работу за 9900 рублей'>9900 РУБ.</button>
                         </div>
                     </li>
                 </ul>
                 <ul class='pagination-list'>
-                    <li class='pagination-item pagination-item-current'><a>1</a></li>
+                    <li class='pagination-item pagination-item-current'><a href='#'>1</a></li>
                     <li class='pagination-item'><a href='#'>2</a></li>
                     <li class='pagination-item'><a href='#'>3</a></li>
                     <li class='pagination-item'><a href='#'>Следующая</a></li>
@@ -102,19 +135,19 @@
                 <p><b>Nёrds design studio</b></p>
                 <p>191186, Санкт-Петербург,
                     ул.Б.Конюшенная, д.19/8</p>
-                <a href='tel.:+78122757575'>тел. +7 (812) 275-75-75</a>
-                <a class='button' href='#'>Напишите нам</a>
+                <a href='tel:+78122757575'>тел. +7 (812) 275-75-75</a>
+                <button class='button' href='#'>Напишите нам</button>
             </section>
             <div id='map'></div>
-    <!--         <script></script>-->
+<!--             <script></script>-->
             <noscript><img src='img/map.jpg' alt='Введите адрес в Google Maps'></noscript>
-            <div class="footer-social">
+            <div class='footer-social'>
                 <ul class='social-contacts'>
-                    <li><a class="social-button" href="#">
+                    <li><a class='social-button' href='#'  aria-label='Ссылка на группу Вконтакте'>
                         <img src='#' alt='Вконтакте'></a></li>
-                    <li><a class="social-button" href="#">
+                    <li><a class='social-button' href='#' aria-label='Ссылка на страницу Facebook'>
                         <img src='#' alt='Фейсбук'></a></li>
-                    <li><a class="social-button" href="#">
+                    <li><a class='social-button' href='#' aria-label='Ссылка на Instagram'>
                         <img src='#' alt='Инстаграм'></a></li>
                 </ul>
                 <p><b>Давайте дружить, это выгодно!</b></p>
