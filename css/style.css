@@ -1,0 +1,484 @@
+* {
+    outline: 1px dashed red;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+    min-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/*Надо будет убрать для доп.критерия*/
+ul {
+    list-style: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-size: 55px;
+    order: 2;
+    padding-top: 60px;
+    padding-bottom: 95px;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 0 20px;
+}
+
+.main-header-logo {
+    border-bottom: 50px;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
+.main-header .inner-page {
+    margin-bottom: 60px;
+}
+/*Почему то не работает отступ, поставила отступ сверху в catalog-columns. Почему он может не работать?*/
+
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 440px;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.page-main-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.page-catalog-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    display: block;
+    width: 240px;
+    padding: 13px 0;
+
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    border-radius: 3px;
+    border: none;
+
+}
+
+.button:hover,
+.button:focus {
+    background-color: #e74246;
+}
+
+.button:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.shopping-cart a:hover,
+.shopping-cart a:focus {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.shopping-cart a:active {
+    color: #a6a6a6;
+    opacity: 0.3;
+}
+
+.site-navigation-current a {
+    border-bottom: 3px solid #fb565a;
+}
+
+.services {
+    display: flex;
+    width: 1100px;
+    padding-right: 60px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    border-bottom: 2px solid #818181;
+
+}
+
+.service-item {
+    width: 300px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.service-button-web-sites {
+    background-color: #fb565a;
+}
+
+.service-button-applications {
+    background-color: #00ca74;
+}
+
+.service-button-applications:hover,
+.service-button-applications:focus {
+    background-color: #00bc6c;
+}
+
+.service-button-applications:active {
+    background-color: #00aa62;
+}
+
+.service-button-presentations {
+    background-color: #efc84a;
+}
+
+.service-button-presentations:hover,
+.service-button-presentations:focus {
+    background-color: #eab534;
+}
+
+.service-button-presentations:active {
+    background-color: #e5a722;
+}
+
+.about-us {
+    display: flex;
+    width: 1160px;
+    margin-top: 40px;
+    margin-bottom: 77px;
+    justify-content: space-between;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+    padding-top: 35px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.filters {
+    width: 260px;
+}
+
+.catalog {
+    width: 760px;
+}
+
+.sorting-catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sorting-catalog-methods-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 360px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sorting-by-type {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.pyramid-sorting {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 360px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pagination-list {
+    display: flex;
+    width: 445px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.filters legend,
+.catalog p:first-child {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filter-by-layout label,
+.filter-by-feature label {
+    color: #283136;
+    line-height: 20px;
+}
+
+.filter-by-layout + label,
+.filter-by-feature + label {
+    color: #000000;
+    opacity: 0.4;
+}
+
+.filter-by-layout:hover + label,
+.filter-by-feature:hover + label,
+.filter-by-layout:focus + label,
+.filter-by-feature:focus + label {
+    color: #000000;
+    opacity: 1;
+}
+
+.filter-by-layout:disabled + label,
+.filter-by-feature:disabled + label {
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.1;
+}
+
+.form-button,
+.pagination-item {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.form-button {
+    width: 260px;
+}
+
+.pagination-item-current {
+    background-color: #ffffff;
+    border: 3px solid #dbdbdb;
+}
+
+.form-button:hover,
+.pagination-item:hover,
+.form-button:focus,
+.pagination-item:focus {
+    background-color: #dfdfdf;
+}
+
+.form-button:active,
+.pagination-item:active {
+    color: rgba(0,0,0, 0.3);
+    background-color: #d5d5d5;
+    border: none;
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sorting-by-type a,
+.pyramid-sorting a {
+    color: #000000;
+    opacity: 0.3;
+    text-shadow: 3px 0 0 rgba(0, 0, 0, 0.35);
+}
+
+.sorting-by-type a:hover,
+.sorting-by-type a:focus,
+.pyramid-sorting a:hover,
+.pyramid-sorting a:focus {
+    color: #000000;
+    opacity: 0.6;
+    text-shadow: 3px 0 0 rgba(0, 0, 0, 0.35);
+}
+
+.sorting-by-type a:active,
+.pyramid-sorting a:active {
+    color: #000000;
+    opacity: 1;
+    text-shadow: 3px 0 0 0 rgba(0, 0, 0, 0.35);
+/*Надо ли уже на этом этапе проставлять тени? Если да, то что не так с их размером?*/
+}
+
+.catalog-item-modal-window {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.catalog-item-description p {
+    color: #818181;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.catalog-item-button:active {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+.clients {
+    display: flex;
+    width: 1160px;
+    height: 180px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #818181;
+    border-bottom: 2px solid #818181;
+}
+
+/*down*/
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    align-items: center;
+}
+
+.social-contacts {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    margin-right: 140px;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+/*Не понимаю, как убрать расстояние между тегами p*/
+}
+
+.footer-social p:first-of-type {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.social-button {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-button img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #e74246;
+}
+
+.social-button:active {
+    background-color: #d7373b;
+}
