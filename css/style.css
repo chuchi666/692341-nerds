@@ -393,8 +393,6 @@ ul {
 .pyramid-sorting a:active {
     color: #000000;
     opacity: 1;
-    text-shadow: 3px 0 0 0 rgba(0, 0, 0, 0.35);
-/*Надо ли уже на этом этапе проставлять тени? Если да, то что не так с их размером?*/
 }
 
 .catalog-item-modal-window {
@@ -455,7 +453,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-/*Не понимаю, как убрать расстояние между тегами p*/
 }
 
 .footer-social p:first-of-type {
