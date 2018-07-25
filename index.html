@@ -27,45 +27,39 @@
         </header>
         <main class='main-container'>
             <section class='slider'>
-                <div class='slider-controls'>
-                    <input type='radio' id='slider-button-1' name='toggle' checked>
-                    <input type='radio' id='slider-button-2' name='toggle'>
-                    <input type='radio' id='slider-button-3' name='toggle'>
-                    <label for='slider-button-1'></label>
-                    <label for='slider-button-2'></label>
-                    <label for='slider-button-3'></label>
-                </div>
-                <ul class='slider-slides'>
-                    <li class='first-slider-slides'>
-                        <img src='img/slider_1.png' width='698' height='413' alt='Nёrds-1'>
-                        <div class='slider-slides-info'>
+                <div class='container'>
+                    <input class='visually-hidden first-slider-button' type='radio' id='slider-button-1' name='toggle' checked>
+                    <input class='visually-hidden second-slider-button' type='radio' id='slider-button-2' name='toggle'>
+                    <input class='visually-hidden third-slider-button' type='radio' id='slider-button-3' name='toggle'>
+                    <div class='slider-controls'>
+                        <label class='slider-controls-item slider-controls-item-1' for='slider-button-1'>Первый</label>
+                        <label class='slider-controls-item slider-controls-item-2' for='slider-button-2'>Второй</label>
+                        <label class='slider-controls-item slider-controls-item-3' for='slider-button-3'>Третий</label>
+                    </div>
+                    <ul class='slider-list'>
+                        <li class='slider-item'>
                             <h1 class='visually-hidden'>Студия Нёрдс</h1>
-                            <p><b>Долго, дорого, скурпулезно.</b></p>
-                            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                            <a class='button slider-item-button' href='#'>Узнать больше</a>
-                        </div>
-                    </li>
-                    <li class='second-slider-slides'>
-                        <img src='img/slider_2.png' width='663' height='430' alt='Nёrds-2'>
-                        <div class='slider-slides-info'>
+                            <h3>Долго, дорого,<br> скрупулезно.</h3>
+                            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                              <a class='button slider-item-button' href='#'>Узнать больше</a>
+                        </li>
+                        <li class='slider-item'>
                             <h1 class='visually-hidden'>Студия Нёрдс</h1>
-                            <p><b>Любим математику как никто другой</b></p>
+                            <h3>Любим математику как никто другой</h3>
                             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                            <a class='button slider-item-button' href='#'>Узнать больше</a>
-                        </div>
-                    </li>
-                    <li class='third-slider-slides'>
-                        <img src='img/slider_3.png' width='759' height='411' alt='Nёrds-3'>
-                        <div class='slider-slides-info'>
+                              <a class='button slider-item-button' href='#'>Узнать больше</a>
+                        </li>
+                        <li class='slider-item'>
                             <h1 class='visually-hidden'>Студия Нёрдс</h1>
-                            <p><b>Только ночь, только хардкор</b></p>
-                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                            <a class='button slider-item-button' href='#'>Узнать больше</a>
-                        </div>
-                    </li>
-                </ul>
+                            <h3>Только ночь,<br> только хардкор</h3>
+                            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                              <a class='button slider-item-button' href='#'>Узнать больше</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class='service'>
+                <div class='container'>
                 <h2 class='visually-hidden'>Услуги студии Нёрдс</h2>
                 <ul class='services'>
                     <li class='service-item'>
@@ -87,8 +81,9 @@
                          <a class='button service-button-presentations' href='#' aria-label='Перейти на страницу для заказа презентации'>Заказать</a>
                     </li>
                  </ul>
+              </div>
             </section>
-            <section class='about-us'>
+            <section class='about-us container'>
                 <div class='services-wrapper'>
                     <p><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
                     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -117,15 +112,17 @@
                 </div>
             </section>
             <section class='clients-section'>
+              <div class='container'>
                 <ul class='clients'>
                     <li><a class='client' href='https://htmlacademy.ru/intensive/htmlcss'><img src='img/logo-html-academy.png' width='199' height='68' alt='HTML Academy'></a></li>
                     <li><a class='client' href='#'><img src='img/logo-borodinski.png' width='209' height='90' alt='Barbershop Borodinski'></a></li>
                     <li><a class='client' href='#'><img src='img/logo-pink.png' width='185' height='52' alt='Pink'></a></li>
                     <li><a class='client' href='#'><img src='img/logo-mishka.png' width='173' height='84' alt='Mishka'></a></li>
                 </ul>
+              </div>
             </section>
         </main>
-        <footer class='main-footer'>
+        <footer class='main-footer container'>
             <section class='contacts'>
                 <p><b>Nёrds design studio</b></p>
                 <p>191186, Санкт-Петербург,
