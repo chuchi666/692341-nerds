@@ -9,21 +9,30 @@
     </head>
     <body>
         <header class='main-header'>
-            <nav class='main-navigation' aria-label='Навигация по сайту'>
-                <a class='main-header-logo'><img src='img/logo-nerds.svg' width='160' height='65' alt='Логотип "Нёрдс"'>
-                </a>
-                <div class='main-navigation-wrapper'>
-                    <ul class='site-navigation'>
-                        <li><a href='#'>Студия</a></li>
-                        <li><a href='#'>Клиенты</a></li>
-                        <li><a href='catalog.html'>Магазин</a></li>
-                        <li><a href='#'>Контакты</a></li>
+            <div class='container'>
+                <nav class='main-navigation' aria-label='Навигация по сайту'>
+                    <a class='main-header-logo'>
+                        <img src='img/logo-nerds.svg' width='160' height='65' alt='Логотип "Нёрдс"'>
+                    </a>
+                    <ul class='site-navigation main-navigation-wrapper'>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Студия</a>
+                        </li>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Клиенты</a>
+                        </li>
+                        <li class='site-list-item site-navigation-current'>
+                            <a class='site-list-link link-active' href='catalog.html'>Магазин</a>
+                        </li>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Контакты</a>
+                        </li>
                     </ul>
-                </div>
-                <div class='shopping-cart'>
-                    <a href='#'><img src='img/icon-cart.svg' width='15' height='15' alt=''>Корзина</a>
-                </div>
-             </nav>
+                    <div class='site-navigation shopping-cart'>
+                        <a class='cart-link' href='#'>Корзина</a>
+                    </div>
+                 </nav>
+            </div>
         </header>
         <main class='main-container'>
             <section class='slider'>
@@ -58,55 +67,64 @@
                     </ul>
                 </div>
             </section>
-            <section class='service'>
-                <div class='container'>
-                <h2 class='visually-hidden'>Услуги студии Нёрдс</h2>
-                <ul class='services'>
-                    <li class='service-item'>
-                         <img src='img/service-item-web-sites.png' width='300' height='146' alt='Услуги по созданию веб-сайтов'>
-                         <h3>Веб-сайты</h3>
-                         <p>Мир никогда не будет прежним после того, как увидит наш сайт!</p>
-                         <a class='button service-button-web-sites' href='#' aria-label='Перейти на страницу для заказа веб-сайта'>Заказать</a>
-                    </li>
-                    <li class='service-item'>
-                         <img src='img/service-item-applications.png' width='300' height='146' alt='Услуги по созданию приложений'>
-                         <h3>Приложения</h3>
-                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                         <a class='button service-button-applications' href='#' aria-label='Перейти на страницу для заказа приложения'>Заказать</a>
-                    </li>
-                    <li class='service-item'>
-                         <img src='img/service-item-presentations.png' width='300' height='146' alt='Услуги по созданию презентаций'>
-                         <h3>Презентации</h3>
-                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                         <a class='button service-button-presentations' href='#' aria-label='Перейти на страницу для заказа презентации'>Заказать</a>
-                    </li>
-                 </ul>
-              </div>
-            </section>
+            <div class='container'>
+                <section class='service'>
+                    <h2 class='visually-hidden'>Услуги студии Нёрдс</h2>
+                    <ul class='services'>
+                        <li class='service-item'>
+                             <img src='img/service-item-web-sites.png' width='300' height='146' alt='Услуги по созданию веб-сайтов'>
+                             <h3>Веб-сайты</h3>
+                             <p>Мир никогда не будет прежним после того, как увидит наш сайт!</p>
+                             <a class='button service-button service-button-web-sites' href='#' aria-label='Перейти на страницу для заказа веб-сайта'>Заказать</a>
+                        </li>
+                        <li class='service-item'>
+                             <img src='img/service-item-applications.png' width='300' height='146' alt='Услуги по созданию приложений'>
+                             <h3>Приложения</h3>
+                             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                             <a class='button service-button service-button-applications' href='#' aria-label='Перейти на страницу для заказа приложения'>Заказать</a>
+                        </li>
+                        <li class='service-item'>
+                             <img src='img/service-item-presentations.png' width='300' height='146' alt='Услуги по созданию презентаций'>
+                             <h3>Презентации</h3>
+                             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                             <a class='button service-button service-button-presentations' href='#' aria-label='Перейти на страницу для заказа презентации'>Заказать</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
             <section class='about-us container'>
                 <div class='services-wrapper'>
-                    <p><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+                    <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
                     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                    <p>Выполняем заказы на разработку:</p>
+                    <p><b>Выполняем заказы на разработку:</b></p>
                     <ul class='service-list'>
-                        <li>Веб-сайтов любой сложности</li>
-                        <li>Мобильных приложений для iOs и Android</li>
-                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                        <li class='service-list-item'>Веб-сайтов любой сложности</li>
+                        <li class='service-list-item'>Мобильных приложений для iOs и Android</li>
+                        <li class='service-list-item'>Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </div>
                 <div class='statistics'>
                     <img src='img/logo-nerds-illustration.png' width='360' height='208' alt='Логотип "Нёрдс"'>
-                    <p>С 2004 года мы любим точность во всем:</p>
+                    <p>С 2004 года любим точность во всем:</p>
                     <table class='work-statistics'>
-                        <tr>
-                            <td>146<sup>%</sup></td>
-                            <td>100<sup>%</sup></td>
-                            <td>50<sup>%</sup></td>
+                        <tr class='table-trace-percent'>
+                            <th class='table-cell'>
+                                <span class='table-cell-number'>146</span>
+                                <sup class='table-cell-percent table-cell-percent-dedication'>%</sup>
+                            </th>
+                            <th class='table-cell'>
+                                <span class='table-cell-number'>100</span>
+                                <sup class='table-cell-percent table-cell-percent-time'>%</sup>
+                            </th>
+                            <th class='table-cell'>
+                                <span class='table-cell-number'>50</span>
+                                <sup class='table-cell-percent table_cell-percent-paying'>%</sup>
+                            </th>
                         </tr>
-                        <tr>
-                            <th>Уровень самоотдачи</th>
-                            <th>Соблюдение сроков</th>
-                            <th>Минимальная предоплата</th>
+                        <tr class='table-trace-description'>
+                            <td class='table-cell'>Уровень самоотдачи</td>
+                            <td class='table-cell'>Соблюдение сроков</td>
+                            <td class='table-cell'>Минимальная предоплата</td>
                         </tr>
                     </table>
                 </div>
@@ -114,25 +132,26 @@
             <section class='clients-section'>
               <div class='container'>
                 <ul class='clients'>
-                    <li><a class='client' href='https://htmlacademy.ru/intensive/htmlcss'><img src='img/logo-html-academy.png' width='199' height='68' alt='HTML Academy'></a></li>
-                    <li><a class='client' href='#'><img src='img/logo-borodinski.png' width='209' height='90' alt='Barbershop Borodinski'></a></li>
-                    <li><a class='client' href='#'><img src='img/logo-pink.png' width='185' height='52' alt='Pink'></a></li>
-                    <li><a class='client' href='#'><img src='img/logo-mishka.png' width='173' height='84' alt='Mishka'></a></li>
+                    <li class='clients-item'><a class='clients-link' href='https://htmlacademy.ru/intensive/htmlcss'><img src='img/logo-html-academy.png' width='199' height='68' alt='HTML Academy'></a></li>
+                    <li class='clients-item'><a class='clients-link' href='#'><img src='img/logo-borodinski.png' width='209' height='90' alt='Barbershop Borodinski'></a></li>
+                    <li class='clients-item'><a class='clients-link' href='#'><img src='img/logo-pink.png' width='185' height='52' alt='Pink'></a></li>
+                    <li class='clients-item'><a class='clients-link' href='#'><img src='img/logo-mishka.png' width='173' height='84' alt='Mishka'></a></li>
                 </ul>
               </div>
             </section>
         </main>
         <footer class='main-footer container'>
-            <section class='contacts'>
-                <p><b>Nёrds design studio</b></p>
-                <p>191186, Санкт-Петербург,
-                    ул.Б.Конюшенная, д.19/8</p>
-                <a href='tel:+78122757575'>тел. +7 (812) 275-75-75</a>
-                <a class='button' href='#'>Напишите нам</a>
+            <section class='map'>
+                <h2 class='visually-hidden'>Карта</h2>
+                <div class='map-image'></div>
+                <section class='contacts container'>
+                    <p class='contacts-name'><b>Nёrds design studio</b></p>
+                    <p class='contacts-adress'>191186, Санкт-Петербург,
+                        ул.Б.Конюшенная, д.19/8</p>
+                    <a class='contacts-telephone-number' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a>
+                    <a class='contacts-button button' href='#'>Напишите нам</a>
+                </section>
             </section>
-            <div id='map'>
-                <img src='img/map.jpg' width='1440' height='785' alt='Введите адрес в Google Maps'>
-            </div>
     <!--         <script></script>-->
             <noscript><img src='img/map.jpg' alt='Введите адрес в Google Maps'></noscript>
             <div class='footer-social'>
@@ -166,11 +185,15 @@
                 </p>
                 <p>
                   <label class='modal' for='message'>Текст письма:</label>
-                  <textarea class='modal' id='message' rows='4' cols='85' placeholder='В свободной форме'></textarea>
+                  <textarea class='modal' id='message' rows='5' placeholder='В свободной форме'></textarea>
                 </p>
-                <button class='button' type='submit'>Отправить</button>
+                <button class='modal-submit button' type='submit'>Отправить</button>
             </form>
             <button class='modal-close' type='button'>Закрыть</button>
         </section>
+<!--
+        <script src="js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgUTh-jVy6qLG93pUjyffkqFJcHVmlI&callback=initMap"></script>
+-->
     </body>
 </html>

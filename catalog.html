@@ -9,21 +9,27 @@
     </head>
     <body>
         <header class='main-header inner-page'>
-            <div class='main-container'>
+            <div class='container'>
                 <nav class='main-navigation' aria-label='Навигация по сайту'>
                     <a class='main-header-logo' href='index.html'>
                         <img src='img/logo-nerds.svg' width='160' height='65' alt='Логотип "Нёрдс"'>
                     </a>
-                    <div class='main-navigation-wrapper'>
-                        <ul class='site-navigation'>
-                            <li><a href='#'>Студия</a></li>
-                            <li><a href='#'>Клиенты</a></li>
-                            <li class='site-navigation-current'><a href='catalog.html'>Магазин</a></li>
-                            <li><a href='#'>Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class='shopping-cart'>
-                        <a href='#'><img src='img/icon-cart.svg' width='15' height='15' alt=''>Корзина</a>
+                    <ul class='site-navigation main-navigation-wrapper'>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Студия</a>
+                        </li>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Клиенты</a>
+                        </li>
+                        <li class='site-list-item site-navigation-current'>
+                            <a class='site-list-link link-active' href='catalog.html'>Магазин</a>
+                        </li>
+                        <li class='site-list-item'>
+                            <a class='site-list-link' href='#'>Контакты</a>
+                        </li>
+                    </ul>
+                    <div class='site-navigation shopping-cart'>
+                        <a class='cart-link' href='#'>Корзина</a>
                     </div>
                 </nav>
             </div>
@@ -32,42 +38,70 @@
         <main class='container'>
             <div class='catalog-columns'>
                 <section class='filters'>
-                    <form action='#' aria-label='Критерии выбора работы'>
-                        <fieldset>
-                            <legend>Стоимость:</legend>
-                            <input class='filter-by-price' type='text'><label class='service-properties-name' for='price' aria-label='Ценовой диапазон'></label>
+                    <form class='form form-bar' action='https://echo.htmlacademy.ru' method='post'  aria-label='Критерии выбора работы'>
+                        <fieldset class='form-fieldset form-fieldset-price'>
+                            <legend class='form-legend'>Стоимость:</legend>
+                            <div class='form-range range'>
+                                <div class='range-scale'>
+                                    <div class='range-select'></div>
+                                </div>
+                                <div class='range-toggle toggle-min' tabindex='0'></div>
+                                <div class='range-toggle toggle-max' tabindex='0'></div>
+                            </div>
+                            <div class='form-price-control price-control' aria-label='Переместите контрольные точки на шкале для задания ценового диапазона'>
+
+                              <label class='price-control-label' for='price-min'>от</label>
+                              <input class='price-control-input' type='text' id='price-min' name='price-min' value='0' aria-label='Введите стоимость от 0 до 15000 рублей'>
+
+                              <label class='price-control-label' for='price-max'>до</label>
+                              <input class='price-control-input' type='text' id='price-max' name='price-max' value='15 000' aria-label='Введите стоимость до 15000 рублей'>
+
+                            </div>
+                        </fieldset>
+                        <fieldset class='form-fieldset form-fieldset-layout'>
+                            <legend class='form-legend'>Сетка:</legend>
+
+                            <ul class='form__list'>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-layout' id='adaptive layout' type='radio' name='grid' value='adaptive layout' checked=''>
+                                    <label class='service-properties-name' for='adaptive layout' aria-label='Адаптивная сетка'>Адаптивная</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-layout' id='fixed layout' type='radio' name='grid' value='fixed layout'>
+                                    <label class='service-properties-name' for='fixed layout' aria-label='Фиксированная сетка'>Фиксированная</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-layout' id='rubber layout' type='radio' name='grid' value='rubber layout'>
+                                    <label class='service-properties-name' for='rubber layout' aria-label='Резиновая сетка'>Резиновая</label>
+                                </li>
+                            </ul>
                         </fieldset>
                         <fieldset>
-                            <legend>Сетка:</legend>
-
-                            <input class='filter-by-layout' id='adaptive layout' type='radio' name='grid' value='adaptive layout' checked=''>
-                            <label class='service-properties-name' for='adaptive layout' aria-label='Адаптивная сетка'>Адаптивная</label>
-
-                            <input class='filter-by-layout' id='fixed layout' type='radio' name='grid' value='fixed layout'>
-                            <label class='service-properties-name' for='fixed layout' aria-label='Фиксированная сетка'>Фиксированная</label>
-
-                            <input class='filter-by-layout' id='rubber layout' type='radio' name='grid' value='rubber layout'>
-                            <label class='service-properties-name' for='rubber layout' aria-label='Резиновая сетка'>Резиновая</label>
+                            <legend class='form-legend'>Особенности:</legend>
+                            <ul class='form__list'>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-feature' id='slider' type='checkbox' name='features' value='slider' checked=''>
+                                    <label class='service-properties-name' for='slider' aria-label='С добавлением слайдера'>Слайдер</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-feature' id='benefit-block' type='checkbox' name='features' value='benefit-block'>
+                                    <label class='service-properties-name' for='benefit-block' aria-label='С добавлением блока преимуществ'>Блок преимуществ</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-feature' id='news' type='checkbox' name='features' value='news' checked=''>
+                                    <label class='service-properties-name' for='news' aria-label='С добавлением блока Новости'>Новости</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-feature' id='gallery' type='checkbox' name='features' value='gallery'>
+                                    <label class='service-properties-name' for='gallery' aria-label='С добавлением блока Галереи'>Галерея</label>
+                                </li>
+                                <li class='form-item' tabindex='0'>
+                                    <input class='filter-by-feature' id='cart' type='checkbox' name='features' value='cart'>
+                                    <label class='service-properties-name' for='cart' aria-label='С добавлением Корзины'>Корзина</label>
+                                </li>
+                            </ul>
                         </fieldset>
-                        <fieldset>
-                            <legend>Особенности:</legend>
-
-                            <input class='filter-by-feature' id='slider' type='checkbox' name='features' value='slider' checked=''>
-                            <label class='service-properties-name' for='slider' aria-label='С добавлением слайдера'>Слайдер</label>
-
-                            <input class='filter-by-feature' id='benefit-block' type='checkbox' name='features' value='benefit-block'>
-                            <label class='service-properties-name' for='benefit-block' aria-label='С добавлением блока преимуществ'>Блок преимуществ</label>
-
-                            <input class='filter-by-feature' id='news' type='checkbox' name='features' value='news' checked=''>
-                            <label class='service-properties-name' for='news' aria-label='С добавлением блока Новости'>Новости</label>
-
-                            <input class='filter-by-feature' id='gallery' type='checkbox' name='features' value='gallery'>
-                            <label class='service-properties-name' for='gallery' aria-label='С добавлением блока Галереи'>Галерея</label>
-
-                            <input class='filter-by-feature' id='cart' type='checkbox' name='features' value='cart'>
-                            <label class='service-properties-name' for='cart' aria-label='С добавлением Корзины'>Корзина</label>
-                        </fieldset>
-                        <button class="form-button" aria-label="Показать результаты по заданным критериям">Показать</button>
+                        <button class='form-button' aria-label="Показать результаты по заданным критериям">Показать</button>
                     </form>
                 </section>
                 <section class='catalog'>
@@ -75,13 +109,17 @@
                         <p><b>Сортировать:</b></p>
                         <div class='sorting-catalog-methods-wrapper'>
                             <ul class='sorting-by-type'>
-                                <li><a href='#'>По цене</a></li>
-                                <li><a href='#'>По типу</a></li>
-                                <li><a href='#'>По названию</a></li>
+                                <li class='sorting-item'><a class='sorting-button link-active' href='#'>По цене</a></li>
+                                <li class='sorting-item'><a class='sorting-button' href='#'>По типу</a></li>
+                                <li class='sorting-item'><a class='sorting-button' href='#'>По названию</a></li>
                             </ul>
                             <ul class='pyramid-sorting'>
-                                <li><a href='#'><img src='img/icon-down-dir.svg' width='11' height='10' alt='По убыванию'></a></li>
-                                <li><a href='#'><img src='img/icon-up-dir.svg' width='11' height='10' alt='По возрастанию'></a></li>
+                                <li class='sorting-item'>
+                                    <a class='sorting-button-up link-active' href='#'><span class='visually-hidden'>По возрастанию</span></a>
+                                </li>
+                                <li class='sorting-item'>
+                                    <a class='sorting-button-down' href='#'><span class='visually-hidden'>По убыванию</span></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -136,25 +174,32 @@
                         </li>
                     </ul>
                     <ul class='pagination-list'>
-                        <li class='pagination-item pagination-item-current'><a>1</a></li>
-                        <li class='pagination-item'><a href='#'>2</a></li>
-                        <li class='pagination-item'><a href='#'>3</a></li>
-                        <li class='pagination-item'><a href='#'>Следующая</a></li>
+                        <li class='pagination-item pagination-item-current'>
+                            <a>1</a>
+                        </li>
+                        <li class='pagination-item'>
+                            <a href='#'>2</a>
+                        </li>
+                        <li class='pagination-item'>
+                            <a href='#'>3</a>
+                        </li>
+                        <li class='pagination-item-next'>
+                            <a href='#'>Следующая</a>
+                        </li>
                     </ul>
                 </section>
             </div>
         </main>
-        <footer class='main-footer container'>
+       <footer class='main-footer container'>
+            <div class='map-image' id='map'></div>
             <section class='contacts'>
                 <p><b>Nёrds design studio</b></p>
-                <p>191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+                <p>191186, Санкт-Петербург,
+                    ул.Б.Конюшенная, д.19/8</p>
                 <a href='tel:+78122757575'>тел. +7 (812) 275-75-75</a>
                 <a class='button' href='#'>Напишите нам</a>
             </section>
-            <div id='map'>
-                <img src='img/map.jpg' width='1440' height='785' alt='Введите адрес в Google Maps'>
-            </div>
-        <!--         <script></script>-->
+    <!--         <script></script>-->
             <noscript><img src='img/map.jpg' alt='Введите адрес в Google Maps'></noscript>
             <div class='footer-social'>
                 <ul class='social-contacts'>
@@ -187,11 +232,15 @@
                 </p>
                 <p>
                   <label class='modal' for='message'>Текст письма:</label>
-                  <textarea class='modal' id='message' rows='4' cols='85' placeholder='В свободной форме'></textarea>
+                  <textarea class='modal' id='message' rows='5' placeholder='В свободной форме'></textarea>
                 </p>
-                <button class='button' type='submit'>Отправить</button>
+                <button class='modal-submit button' type='submit'>Отправить</button>
             </form>
             <button class='modal-close' type='button'>Закрыть</button>
         </section>
+<!--
+        <script src="js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgUTh-jVy6qLG93pUjyffkqFJcHVmlI&callback=initMap"></script>
+-->
     </body>
 </html>
