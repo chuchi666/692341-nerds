@@ -118,7 +118,7 @@
                             </th>
                             <th class='table-cell'>
                                 <span class='table-cell-number'>50</span>
-                                <sup class='table-cell-percent table_cell-percent-paying'>%</sup>
+                                <sup class='table-cell-percent table-cell-percent-paying'>%</sup>
                             </th>
                         </tr>
                         <tr class='table-trace-description'>
@@ -140,10 +140,9 @@
               </div>
             </section>
         </main>
-        <footer class='main-footer container'>
-            <section class='map'>
+        <footer class='main-footer'>
+          <div class='footer-map'><section class='map'>
                 <h2 class='visually-hidden'>Карта</h2>
-                <div class='map-image'></div>
                 <section class='contacts container'>
                     <p class='contacts-name'><b>Nёrds design studio</b></p>
                     <p class='contacts-adress'>191186, Санкт-Петербург,
@@ -151,10 +150,9 @@
                     <a class='contacts-telephone-number' href='tel:+78122757575'>тел. +7 (812) 275-75-75</a>
                     <a class='contacts-button button' href='#'>Напишите нам</a>
                 </section>
-            </section>
-    <!--         <script></script>-->
-            <noscript><img src='img/map.jpg' alt='Введите адрес в Google Maps'></noscript>
-            <div class='footer-social'>
+          </section>
+           </div>
+            <div class='footer-social container'>
                 <ul class='social-contacts'>
                     <li><a class="social-button" href='#'  aria-label="Ссылка на группу Вконтакте"><img src='img/icon-vk.svg' width='26' height='15' alt='Вконтакте'>
                         </a>
@@ -172,28 +170,24 @@
                 </div>
             </div>
         </footer>
-        <section class='modal modal-login' hidden>
+        <section class='modal-window'>
             <h2>Напишите нам</h2>
             <form class='contact-form' action='https://echo.htmlacademy.ru' method='post'>
                 <p>
                   <label class='modal' for='user-name'>Ваше имя:</label>
-                  <input class='input-user-name' id='user-name' type='text' name='username' placeholder='Имя Фамилия'>
+                  <input class='modal-input input-user-name' id='user-name' type='text' name='username' placeholder='Имя Фамилия'>
                 </p>
                 <p>
                   <label class='modal' for='user-email'>Ваш e-mail:</label>
-                  <input class='input-user-email' id='user-email' type='text' name='email' placeholder='email@example.com'>
+                  <input class='modal-input input-user-email' id='user-email' type='text' name='email' placeholder='email@example.com'>
                 </p>
-                <p>
+                <p class='blabla'>
                   <label class='modal' for='message'>Текст письма:</label>
-                  <textarea class='modal' id='message' rows='5' placeholder='В свободной форме'></textarea>
+                  <textarea class='modal-text-message' id='message' rows='5'  placeholder='В свободной форме'></textarea>
                 </p>
-                <button class='modal-submit button' type='submit'>Отправить</button>
+                <button class='modal-submit-button button' type='submit'>Отправить</button>
             </form>
-            <button class='modal-close' type='button'>Закрыть</button>
+            <button class='modal-close-button' type='button'>Закрыть</button>
         </section>
-<!--
-        <script src="js/script.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEPgUTh-jVy6qLG93pUjyffkqFJcHVmlI&callback=initMap"></script>
--->
     </body>
 </html>
