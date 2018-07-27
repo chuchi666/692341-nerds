@@ -785,6 +785,7 @@ img {
 
 .form-item {
     width: 100%;
+    padding-left: 4px;
 }
 
 .form-fieldset-layout .form-item:not(:last-child),
@@ -978,7 +979,6 @@ img {
 .sorting-catalog-wrapper p {
     margin: 0;
     padding: 0;
-    padding-top: 2px;
     padding-right: 266px;
 }
 
