@@ -1304,7 +1304,7 @@ img {
 /*footer*/
 
 .footer-map {
-    display: block;
+  display: block;
   position: relative;
   min-height: 416px;
   overflow: hidden;
@@ -1314,20 +1314,9 @@ img {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-49%);
+  transform: translate(-50%,-20%);
+  text-align: center;
 }
-
-/*
-.map {
-    width: 1440px;
-    height: 417px;
-
-    background-color: #e9e5dc;
-    background-image: url('../img/map.jpg');
-    background-repeat: no-repeat;
-    background-position: 49% 41.3%;
-}
-*/
 
 .contacts {
     display: block;
