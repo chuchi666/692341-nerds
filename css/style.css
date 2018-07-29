@@ -512,7 +512,8 @@ img {
 }
 
 .statistics p {
-    padding-left: 21px;
+    font-weight: 700;
+    padding-left: 17px;
     padding-top: 17px;
     padding-bottom: 28px;
     text-transform: uppercase;
@@ -533,6 +534,10 @@ img {
     line-height: 18px;
 }
 
+.table-trace-description .table-cell {
+    font-weight: 400;
+}
+
 .table-cell {
     position: relative;
 
@@ -542,7 +547,6 @@ img {
     min-height: 35px;
     margin-bottom: 21px;
     padding-left: 12px;
-
     text-align: left;
     letter-spacing: 0.05px;
 }
@@ -670,8 +674,6 @@ img {
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
     width: 260px;
 }
 
@@ -954,6 +956,7 @@ img {
     padding-top: 17px;
     padding-bottom: 15px;
     text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .form-button:hover,
